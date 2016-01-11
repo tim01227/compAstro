@@ -105,4 +105,7 @@ while True:
     offset -=1
     #if the entire message has moved 'through' the display then
     #start again from the right hand side.
-    if offset <= ((len(m
+    if offset <= ((len(message)+2)*6) * -1:
+        offset = WIDTH
+    #take out or change this line to speed up / slow down the display
+    time.sleep(0.05)
